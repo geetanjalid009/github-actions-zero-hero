@@ -2,9 +2,7 @@
 name: CICD
 
 # manual click (deliver) workflow whenever user needs
-on:
-  workflow_dispatch:  
-
+on: 
 jobs:
 # every jobs needs separte runner is called parallism
   code:
