@@ -3,7 +3,11 @@ name: CICDmain
 
 # manual click (deliver) workflow whenever user needs
 on:
-  workflow_dispatch:  
+  push:
+    branches: [main]
+
+    paths:
+      - '**.html'
 
 jobs:
 # every jobs needs separte runner is called parallism
